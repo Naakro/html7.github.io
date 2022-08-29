@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lora", serif;
+}
+
+/* --------- navigation ---------- */
+
+.navigation {
+  background-color: #5dade2;
+  width: 100%;
+  padding: 10px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
+.navigation h1 a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  margin-left: 20px;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+nav a:hover {
+  color: navy;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 0.8em;
+}
+/* --------- navigation ---------- */
+
+/* --------- header ---------- */
+section {
+  padding: 100px 200px;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url(../img/sampah\ 1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  color: #f0f0f0;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header h1 span {
+  color: #5dade2;
+  font-size: 1.9em;
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.header h3 {
+  color: #f0f0f0;
+  letter-spacing: 10px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.header a {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #5dade2;
+  font-size: 1.6em;
+  font-weight: 500;
+  transition: 0.8s ease;
+}
+
+.header a:hover {
+  color: #f0f0f0;
+  background-color: #5dade2;
+  transform: scale(1.1);
+  padding: 15px 25px;
+}
+/* --------- header ---------- */
+
+/* --------- about ---------- */
+
+.tittle {
+  text-align: center;
+  color: #5dade2;
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 1.5em;
+}
+
+.content img {
+  width: 40%;
+  border: 5px solid #5dade2;
+  border-radius: 15px;
+  float: left;
+  margin-right: 20px;
+}
+
+.content p {
+  line-height: 25px;
+}
+/* --------- about ---------- */
+/* --------- quotes ---------- */
+.quotes {
+  background-color: #f0f0f0;
+  color: grey;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+/* --------- quotes ---------- */
+
+/* --------- helper ---------- */
+.helper {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.helper h1 {
+  color: #5dade2;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.helper p {
+  line-height: 22px;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.cours {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  margin-top: 5%;
+  background-color: #f0f0f0;
+  width: 15em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+  border-radius: 15px;
+  padding: 25px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img img {
+  border-radius: 15px;
+}
+
+.info h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.info p {
+  letter-spacing: 1px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.card2 {
+  margin-top: 5%;
+  background-color: #f0f0f0;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url(../img/sampah\ 2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 25px;
+}
+
+.helper .info2 p {
+  color: #f0f0f0;
+  letter-spacing: 2px;
+}
+
+.helper .info2 h3 {
+  color: #f0f0f0;
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* --------- helper ---------- */
+
+/* --------- contact ---------- */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.3), rgba(4, 9, 30, 0.3)), url(../img/ocean.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact .cont-contact {
+  width: 800px;
+  text-align: center;
+  display: flex;
+}
+
+.contact .cont-contact h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #f0f0f0;
+  letter-spacing: 1px;
+}
+
+.contact .cont-contact p {
+  font-weight: 400;
+  color: #f0f0f0;
+  letter-spacing: 1px;
+}
+
+.contact-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-card .contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card .contact-info .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.contact-card .contact-info .box .contact-logo {
+  background-color: #f0f0f0;
+  height: 60px;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.contact-card .contact-info .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #f0f0f0;
+  font-weight: 300;
+  flex-direction: column;
+}
+
+.contact-card .contact-info .box .text h3 {
+  font-weight: 500;
+  color: Navy;
+  margin-bottom: 8px;
+}
+
+.contactform {
+  width: 40%;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.contactform h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+}
+
+.contactform .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactform .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.6s;
+  color: #666;
+}
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translatey(-20px);
+}
+
+.contactform .inputbox1 input {
+  width: 100px;
+  background-color: #00bcd4;
+  color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* --------- contact ---------- */
+
+/* --------- footer ---------- */
+.footer {
+  padding: 40px 0;
+  background-color: #f0f0f0;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 10px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul li a {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.footer ul li a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.footer .copyright {
+  padding: 5px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+/* --------- footer ---------- */
+
+/* --------- media ---------- */
+@media screen and (max-width: 576px) {
+  section {
+    padding: 20px 80px;
+  }
+
+  .navigation {
+    padding: 10px 50px;
+  }
+
+  .header {
+    padding: 12px 20px;
+  }
+
+  .about img {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 50px;
+  }
+
+  .cont-contact {
+    flex-direction: column;
+  }
+
+  .cont-contact .contact-info {
+    margin-bottom: 40px;
+  }
+
+  .cont-contact .contact-info,
+  .contactform {
+    width: 100%;
+  }
+}
+/* --------- media ---------- */
